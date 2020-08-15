@@ -38,3 +38,13 @@ function getNegativeQuotes () {
     let i = Math.round(Math.random()*(sadQuotes.length -1 ));
     quoteContainer.innerHTML = sadQuotes[i];
 }
+
+function getQuote(type) {
+    if(type == "sad") {
+        let i = Math.round(Math.random()*(sadQuotes.length -1 ));
+        quoteContainer.innerHTML = sadQuotes[i];
+    } else { // aka. happy
+        let i = Math.round(Math.random()*(happyQuotes.length -1 ));
+        quoteContainer.innerHTML = happyQuotes[i];
+    }
+}
