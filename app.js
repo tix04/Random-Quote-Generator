@@ -29,16 +29,6 @@ let sadQuotes = [
 
 let quoteContainer = document.getElementById("quoteDisplay");
 
-function getPositiveQuotes () {
-    let i = Math.round(Math.random()*(happyQuotes.length -1 ));
-    quoteContainer.innerHTML = happyQuotes[i];
-}
-
-function getNegativeQuotes () {
-    let i = Math.round(Math.random()*(sadQuotes.length -1 ));
-    quoteContainer.innerHTML = sadQuotes[i];
-}
-
 function getQuote(type) {
     if(type == "sad") {
         let i = Math.round(Math.random()*(sadQuotes.length -1 ));
