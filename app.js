@@ -27,21 +27,13 @@ let sadQuotes = [
 //let singularPronouns = ["He", "she", "It","The car", "That person", "John", "Jane", "The house", "The dog", "The cat","The weather" ];
 //let pluralPronouns =["They", "The flowers", "These bikes", "Those People", "Those guys", "Those girls", "The dogs", "The cats", "Boats"];
 
-function positiveQuotes () {
-    let i = Math.round(Math.random()*happyQuotes.length);
-    if (0 < i && i < 1){
-        document.getElementById("quoteDisplay").innerHTML = happyQuotes[0];
-    } else {
+function getPositiveQuotes () {
+    let i = Math.round(Math.random()*(happyQuotes.length -1 ));
     document.getElementById("quoteDisplay").innerHTML = happyQuotes[i];
-    }
 }
 
-function negativeQuotes () {
-    let i = Math.round(Math.random()*sadQuotes.length);
-    if (0 < i && i < 1){
-        document.getElementById("quoteDisplay").innerHTML = sadQuotes[0];
-    } else {
+function getNegativeQuotes () {
+    let i = Math.round(Math.random()*(sadQuotes.length -1 ));
     document.getElementById("quoteDisplay").innerHTML = sadQuotes[i];
-    }
 }
 
